@@ -1,15 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Bootstrap Layouts: Carousel</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Wisdom Pet Medicine</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/prefixfree.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<h1>Bootstrap Layouts</h1>
-  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<header>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <section class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Wisdom Pet Medicine</a>
+      </section><!-- navbar-header -->
+
+      <section class="collapse navbar-collapse" id="collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#mission">Mission</a></li>
+          <li><a href="#aboutus">About us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#">Staff</a></li>
+          <li><a href="#">Testimonials</a></li>
+        </ul>
+      </section><!-- navbar-collapse -->
+    </div><!-- navbar container -->
+  </nav>
+</header>
+
+<main>
+  <section id="mission">
+    <div class="content container">
+      <h1>Our Mission</h1>
+      <p>Wisdom Pet Medicine strives to blend the best in traditional and alternative medicine in the diagnosis and treatment of companion animals including dogs, cats, birds, reptiles, rodents, and fish. We apply the wisdom garnered in the centuries old tradition of veterinary medicine, to find the safest and most effective treatments and cures, while always maintaining a caring relationship with our patients and their guardians.</p>  
+    </div>
+  </section>
+
+  <section id="aboutus">
+    <div class="content container">
+      <h1 id="aboutus">About us</h1>
+      <p>Wisdom Pet Medicine was founded by Dr. Darren Winthrop, Dr. Elizabeth Chase, and Dr. Kimberly Sanders, to bring the best in traditional and alternative medicine to the local community. The three doctors met while pursuing their veterinary education at Colorado State University, one of the nation's top-rated vet schools. After going their own ways (for almost a decade), to work for different veterinary clinics across the country, the doctors decided it was time to combine their diverse knowledge and skills under one practice at Wisdom Pet Medicine.</p>
+      <p>Our veterinary hospital provides general and specialty vet medicine, and serves as a major surgical center in the region. We're often referred difficult cases from other vet clinics throughout the region, state, and country, and even treat cases from other countries. With specialties in orthopedics, dermatology, oncology, radiology, and ultrasound, we're able to diagnose and treat more conditions in-house, allowing your pet to feel comfortable in friendly and familiar surroundings for the duration of his or her care. We all love animals and strive to make your pet's experience as positive as possible, and even have a pet play yard in the back of our clinic where we give our overnight visitors regular time away from the stress of confinement and treatment. We're proud to say that most of our patients come in wagging their tails happily on return visits - a true indicator that we've made them feel safe and secure. We're honored that you've entrusted your pet's care to us, and we'll stand by our commitment to provide the absolute best in veterinary medicine.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="content container">
+      <h1>Our Services</h1>
+      <p>Wisdom Pet Medicine is a state-of-the-art veterinary hospital, featuring the latest in diagnostic and surgical equipment, and a staff of seasoned veterinary specialists in the areas of general veterinary medicine and surgery, oncology, dermatology, orthopedics, radiology, ultrasound, and much more. We also have a 24-hour emergency clinic in the event your pet needs urgent medical care after regular business hours.</p>
+      <p>At Wisdom, we strive to be your pet’s medical experts from youth through the senior years. We build preventative health care plans for each and every one of our patients, based on breed, age, and sex, so that your pet receives the most appropriate care at crucial milestones in his or her life. Our overarching goal is to give your pet the best shot possible at a long and healthy life, by practicing simple preventative care. We even provide an online Pet Portal where you can view all your pet’s diagnostic results, treatment plans, vaccination and diagnostic schedules, prescriptions, and any other health records.</p>
+    </div>
+  </section>
+
+  <section id="staff">
+    <div class="content container">
+      <h1 id="ourstaff">Our Staff</h1>
+      <section class="doctor">
+        <img src="http://placehold.it/150x150" alt="Photo of Dr Sanders">
+        <h2>Dr. Winthrop</h2>
+        <p>Dr. Winthrop is the guardian of Missy, a three-year old Llaso mix, who he adopted at the shelter. Dr. Winthrop is passionate about spay and neuter and pet adoption, and works tireless hours outside the clinic, performing free spay and neuter surgeries for the shelter.</p>
+      </section>
+
+      <section class="doctor">
+        <img src="http://placehold.it/150x150" alt="Photo of Dr Sanders">
+        <h2>Dr. Chase</h2>
+        <p>Dr. Chase spends much of her free time helping the local bunny rescue organization find homes for bunnies, such as Kibbles - a dalmatian bunny who is part of the large Chase household, including two dogs, three cats, and a turtle.</p>
+      </section>
+
+      <section class="doctor">
+        <img src="http://placehold.it/150x150" alt="Photo of Dr Sanders">
+        <h2>Dr Sanders</h2>
+        <p>Leroy walked into Dr. Sanders front door when she was moving into a new house. After searching for weeks for Leroy's guardians, she decided to make Leroy a part of her pet family, and now has three cats.</p>
+      </section>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <div class="content container">
+      <h2>Testimonials</h2>
+      <blockquote>
+      During the summer, my German Shorthair Pointer, Tonto, began to have severe redness and itching on his belly and feet. Through diagnostic testing, we learned that Tonto is severely allergic to over a dozens kinds of grass pollens. We’ve now been doing allergy injections for several months, and his itching and redness have nearly gone away. I’m very thankful to the veterinarians and staff at Wisdom for the excellent care Tonto received, and for nipping his allergies in the bud, so to speak.
+      <span class="customer">Jane H.</span>
+      </blockquote>
+
+      <blockquote>
+      When Samantha, our Siamese cat, began sleeping all the time and urinating excessively, we brought her to see the specialists at Wisdom. After running a blood test, Dr. Winthrop confirmed what we all feared - Samantha was showing signs of diabetes. The doctor put us on a daily routine to provide Samantha insulin injections, and showed us how to administer the shots. We weren't sure we could do it, but the gang at Wisdom was very supportive and encouraging. Now, two years later, Samantha is still free from any complications of diabetes, and her blood sugar regularly tests normal. Thank you, Wisdom Pet Medicine!
+      <span class="customer">The McPhersons</span>
+      </blockquote>
+
+      <blockquote>
+      The staff at Wisdom worked tirelessly to determine why our three-year old Labrador Retriever, Roxie, started going into sudden kidney failure. They stabilized her and provided fluids until her kidneys were again functioning normal, but it was still a mystery as to what caused her health to decline so quickly. The vet noted our address on Roxie’s chart, and asked if we lived on one of the orchards in the vicinity, and if Roxie had a habit of eating grapes off the vine. Our answer was “of course – she’s a Labrador.” That day we learned just how toxic grapes and raisins are to pets, and Roxie is no longer allowed to roam unattended in the orchard.
+      <span class="customer">Lorraine S</span>
+      </blockquote>
+
+      <blockquote>
+      Wisdom Pet Medicine is the only clinic around that will even book pet fish for appointments. When our 13-year old Comet goldfish, McAllister, turned from silvery white to an angry red, we called around, urgently trying to find a veterinarian who could help. Wisdom not only got us in the same day, but also was able to diagnose McAllister as having a severe case of septicemia. In order to kill the harmful bacteria in his blood, we had to use a dog antibiotic in his tank every day for a week, and in the end, McAllister was good as new. I still smile upon remembering Dr. Chase pulling out an old vet school textbook to calculate the correct antibiotic dose for a fish!
+      <span class="customer">John B</span>
+      </blockquote>
+    </div>
+  </section>
+</main><!-- main -->
+
+<footer>
+  <div class="content container">
+    <p class="contact">Call us toll-free at <span class="phone">888-555-1212</span></p>
+    <p>All contents © 2014 Lynda.com. All rights reserved.</p>
+    <p>Terms of use <a href="#">Privacy policy</a></p>
+  </div>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
