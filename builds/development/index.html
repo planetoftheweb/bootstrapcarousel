@@ -8,9 +8,9 @@
   <script src="js/prefixfree.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar-fixed-top">
 <header>
-  <nav class="navbar navbar-default" role="navigation">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
       <section class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
@@ -19,20 +19,49 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Wisdom Pet Medicine</a>
+        <a class="navbar-brand" href="#">
+          <h1>Wisdom <span class="subhead">Pet Medicine</span></h1>
+        </a>
       </section><!-- navbar-header -->
 
       <section class="collapse navbar-collapse" id="collapse">
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="#mission">Mission</a></li>
           <li><a href="#aboutus">About us</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#">Staff</a></li>
-          <li><a href="#">Testimonials</a></li>
+          <li><a href="#staff">Staff</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
         </ul>
       </section><!-- navbar-collapse -->
     </div><!-- navbar container -->
   </nav>
+
+<div id="features" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#features" data-slide-to="0" class="active"></li>
+    <li data-target="#features" data-slide-to="1"></li>
+    <li data-target="#features" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner fullheight">
+    <div class="item active" style="background-color: red;"><img src="images/lunch.jpg" alt="Photo of "></div>
+    <div class="item"><img src="images/marcanthony.jpg" alt="Photo of "></div>
+    <div class="item"><img src="images/mexicanfood.jpg" alt="Photo of "></div>
+    <div class="item"><img src="images/phonewars.jpg" alt="Photo of "></div>
+    <div class="item"><img src="images/skyline.jpg" alt="Photo of "></div>
+    <div class="item"><img src="images/vancouver.jpg" alt="Photo of "></div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#features" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#features" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
 </header>
 
 <main>
@@ -111,11 +140,18 @@
 <footer>
   <div class="content container">
     <p class="contact">Call us toll-free at <span class="phone">888-555-1212</span></p>
-    <p>All contents © 2014 Lynda.com. All rights reserved.</p>
-    <p>Terms of use <a href="#">Privacy policy</a></p>
+    <p>All contents © 2014 <a href="http://lynda.com">Lynda.com</a>. All rights reserved.</p>
+
+  <nav class="navbar navbar-default" role="navigation">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">Terms of use</a></li>
+      <li><a href="#">Privacy policy</a></li>
+    </ul>
   </div>
+  </nav>
 </footer>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/myscript.js"></script>
 </body>
 </html>
