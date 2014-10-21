@@ -101,11 +101,13 @@ header .navbar-nav {
   width: 100%;
   display:block !important;
 }
+
 .carousel.fade .item:first-child {
   top:auto;
   opacity: 1;
   position:relative;
 }
+
 .carousel.fade .item.active {
   opacity: 1;
   transition: opacity ease-out .7s;
@@ -123,18 +125,14 @@ header .navbar-nav {
 /*----  Mission  ----*/
 #mission {
 	background-color: #E4D29D;
-  background-image: linear-gradient(to bottom, #FFEBB1, #CFB17B);
+  background-image: linear-gradient(to bottom, #EEF08A, #819A2D);
+  border-top: 20px solid rgba(238, 200, 86,.5) ;
 }
 
 /*----  Services  ----*/
 .service {
 	margin: 20px 0;
 	text-align: center;
-}
-
-#services h2 {
-	font-weight: 700;	
-	font-size: 20px;
 }
 
 #services img.icon {
@@ -147,7 +145,6 @@ header .navbar-nav {
 #services h2 {
 	margin-bottom: 10px;
 }
-
 
 @media only screen 
 and (min-width : 450px)
@@ -164,82 +161,22 @@ and (max-width : 768px) {
   background-image: linear-gradient(to bottom, #E4D29D, #CDAE50);
 }
 
-#staff ul {
-	list-style: none ;
-	margin: 0;
-	padding: 0;
-}
-
-#staff ul li {
-	list-style: none ;
-	margin: 0;
-	padding: 0;
-	margin: 50px 0;
-}
-
-.doctor {
-  position: relative;
-}
-
-.doctor .photo {
-	width: 40%;
-}
-
-.doctor .info {
-	width: 60%;
-	padding: 20px;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 .doctor h2 {
 	font-weight: 600;
-	font-size: 1em;
+	font-size: 1.2em;
 	color: #6F4E36;
-	margin-bottom: 5px;
 }
 
 .doctor p {
 	font-size: .8em;
 }
 
-.doctor .right .photo {
-    float: right;
-}
-
 .doctor img {
 	display: block;
-	margin: 0 auto;
 	width: 100%;
-	max-width: 350px;
+	border: .1em solid rgba(237, 199, 85, 0.6);
 }
 
-
-@media only screen 
-and (max-width : 550px) {
-	.doctor .photo {
-		width: 70%;
-		margin: 0 auto;
-	}
-
-	.doctor h2 {
-		text-align: center;
-	}
-
-	.doctor p {
-		margin: 5%;
-	}
-
-	.doctor .info {
-	  position: static;
-	  transform: translateY(0);
-	  text-align: left;
-		width: 100%;
-		font-size: 1.3em;
-	}
-}
 
 /*----  testimonials  ----*/
 #testimonials {
@@ -255,6 +192,7 @@ and (max-width : 550px) {
 	border-left: none;
   min-height: 500px;
   position: relative;
+  padding: 0;
 }
 
 #testimonials blockquote .quote {
@@ -262,13 +200,16 @@ and (max-width : 550px) {
 	padding: 20px 5%;
 	position: absolute;
 	bottom: 0;
-	width: 100%;
+	width: 75%;
 	font-weight: 400;
+	border-radius: 0 50px 0 0;
+	transition: all .5s ease-out;
 }
 
-#testimonials blockquote .quote::after {
-	content: '...';
+#testimonials blockquote .quote:hover {
+	background-color: rgba(239, 240, 196, .9);	
 }
+
 
 #testimonials  #janeh {
   background: url(../images/testimonial-janeh.jpg) no-repeat center center;
@@ -290,10 +231,38 @@ and (max-width : 550px) {
   background-size: cover;
 }
 
-#testimonials .more, #testimonials .customer {
-	display: none;
+#testimonials .quote .intro::after {
+	content: '...';
 }
 
-p::before { 
-    content: "Read this: ";
+#testimonials .quote:hover .intro::after {
+	content: '';
+}
+
+#testimonials .quote {
+	font-size: 1.5em;
+	line-height: 110%;
+	font-weight: 400;
+}
+
+#testimonials .quote .more, #testimonials .customer {
+	opacity: 0;
+	font-size: 0;
+	line-height: 0;
+	padding-top: 10px;
+}
+
+#testimonials .quote:hover .more {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 100;
+	display: block;
+	font-size: .6em;
+	opacity: 1;
+	line-height: 120%;
+}
+
+#testimonials .quote:hover .customer {
+	display: block;
+	font-size: .7em;
+	text-align: right;
 }

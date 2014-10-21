@@ -1,5 +1,5 @@
-# Chetkins
-Repository for my Course on Bootstrap Layouts
+# Bootstrap Carousel
+Repository for my Course on turbo charging 
 
 ## Instructions
 1. Make sure you have [node.js](http://nodejs.org/) and [git](http://git-scm.com/) installed on your machine.

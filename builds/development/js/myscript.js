@@ -11,11 +11,20 @@ $(function() {
     $('.fullheight').css('height', wheight); //set to window tallness 
   });
 
+  //replace each IMG inside the carousel with a background image
+
 	$('#featured .item img').each(function() {
 		var imgSrc = $(this).attr('src');
 		$(this).parent().css({'background-image': 'url('+imgSrc+')'});
 		$(this).remove();
 	});
+
+//  <!-- Indicators -->
+//  <ol class="carousel-indicators">
+//    <li data-target="#featured" data-slide-to="0" class="active"></li>
+//    <li data-target="#featured" data-slide-to="1"></li>
+//    <li data-target="#featured" data-slide-to="2"></li>
+ // </ol>
 
 	//Activate Scrollspy
 	$('body').scrollspy({ target: 'header .navbar' })
@@ -35,7 +44,7 @@ $(function() {
   }); //smooth scrolling
 
 	$('.carousel').carousel({
-	  interval: 7000
+	  interval: 4000
 	})
 
 }); //function
