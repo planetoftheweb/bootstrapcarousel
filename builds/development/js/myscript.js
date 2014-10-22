@@ -1,5 +1,5 @@
 $(function() {
-  var topoffset = 0; //variable for scrolling effects
+  var topoffset = 50; //variable for scrolling effects
 
 	//Make a special class go full screen
   var wheight = $( window ).height(); //get the height of the window
@@ -27,7 +27,29 @@ $(function() {
  // </ol>
 
 	//Activate Scrollspy
-	$('body').scrollspy({ target: 'header .navbar' })
+	$('body').scrollspy({
+    target: 'header .navbar',
+    offset: topoffset
+  })
+
+
+   var hash = $(this).find("li.active a").attr("href");
+   if (hash!=="#featured") {
+      $('header nav').addClass('inbody');
+   } else {
+      $('header nav').removeClass('inbody');
+   }
+
+  //if scroll location goes past the top
+  $('.navbar-fixed-top').on('activate.bs.scrollspy', function () {
+     var hash = $(this).find("li.active a").attr("href");
+     if (hash!=="#featured") {
+        $('header nav').addClass('inbody');
+     } else {
+        $('header nav').removeClass('inbody');
+     }
+  })
+
 
   //Use smooth scrolling
   $('a[href*=#]:not([href=#])').click(function() {
