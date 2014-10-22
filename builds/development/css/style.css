@@ -5,7 +5,7 @@ html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
-  box-sizing: inherit;
+	transition: all .5s ease-out;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -19,7 +19,6 @@ body {
 	font-weight: 300;
 	font-size: 2em;
 	position: relative;
-  transition: opacity ease-out .7s;
 }
 
 /*----  Nav  ----*/
@@ -279,7 +278,6 @@ and (min-width : 2000px)  {
 	width: 75%;
 	font-weight: 400;
 	border-radius: 0 50px 0 0;
-	transition: all .5s ease-out;
 }
 
 #testimonials blockquote .quote:hover {
@@ -316,7 +314,7 @@ and (min-width : 2000px)  {
 }
 
 #testimonials .quote {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	line-height: 110%;
 	font-weight: 400;
 }
@@ -332,8 +330,8 @@ and (min-width : 2000px)  {
 	font-family: "Open Sans", sans-serif;
 	font-weight: 100;
 	display: block;
-	font-size: .6em;
 	opacity: 1;
+	font-size: .8em;
 	line-height: 120%;
 }
 
