@@ -19,6 +19,7 @@ body {
 	font-weight: 300;
 	font-size: 2em;
 	position: relative;
+  transition: opacity ease-out .7s;
 }
 
 /*----  Nav  ----*/
@@ -110,7 +111,6 @@ header .navbar-nav {
 
 .carousel.fade .item.active {
   opacity: 1;
-  transition: opacity ease-out .7s;
 }
 
 .page {
@@ -156,15 +156,25 @@ and (max-width : 768px) {
 
 /*----  Staff  ----*/
 
+
 #staff {
 	background-color: #E4D29D;
   background-image: linear-gradient(to bottom, #E4D29D, #CDAE50);
+}
+
+.staffgroup {
+	padding-bottom: 40px;
+}
+
+.doctor {
+	margin: 10px 0;
 }
 
 .doctor h2 {
 	font-weight: 600;
 	font-size: 1.2em;
 	color: #6F4E36;
+	padding-bottom: 5px;
 }
 
 .doctor p {
@@ -172,11 +182,22 @@ and (max-width : 768px) {
 }
 
 .doctor img {
-	display: block;
 	width: 100%;
-	border: .1em solid rgba(237, 199, 85, 0.6);
 }
 
+@media only screen 
+and (min-width : 2000px)  {
+	.doctor {
+	  position: relative;
+	}
+
+	.doctor .info {
+	  position: absolute;
+	  right: 0;
+	  top: 50%;
+	  transform: translateY(-50%);
+	}
+}
 
 /*----  testimonials  ----*/
 #testimonials {
