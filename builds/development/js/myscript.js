@@ -1,6 +1,8 @@
 $(function() {
   var topoffset = 50; //variable for scrolling effects
 
+  $('.carousel').carousel();
+
 	//Make a special class go full screen
   var wheight = $( window ).height(); //get the height of the window
   $('.fullheight').css('height', wheight); //set to window tallness 
@@ -65,8 +67,5 @@ $(function() {
     } //click function
   }); //smooth scrolling
 
-	$('.carousel').carousel({
-	  interval: 4000
-	})
 
 }); //function
