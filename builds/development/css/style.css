@@ -127,6 +127,30 @@ header .inbody .navbar-brand span.subhead {
 	  height: 100%;
 	}
 
+	.carousel.fade {
+		opacity: 1;
+	}
+
+	.carousel.fade .item {
+	  transition: opacity ease-out .7s;
+	  left: 0 !important;
+	  opacity: 0;
+	  top:0;
+	  position:absolute;
+	  width: 100%;
+	  display:block !important;
+	}
+
+	.carousel.fade .item.active {
+	  opacity: 1;
+	}
+
+	.carousel.fade .item:first-child {
+	  top:auto;
+	  opacity: 1;
+	  position:relative;
+	}
+
 .carousel-control.left {
 	background-image: none;
 }
