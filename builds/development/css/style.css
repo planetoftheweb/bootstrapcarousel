@@ -93,7 +93,6 @@ header .navbar-default .navbar-toggle .icon-bar {
 	background-color: white;
 }
 
-
 header .inbody {
 	background: rgba(104, 73, 49, 0.90) !important;
 }
@@ -117,8 +116,6 @@ header .inbody .navbar-brand h1 {
 header .inbody .navbar-brand span.subhead {
 	display: none;
 }
-
-
 
 /*----  Carousel  ----*/
 
@@ -281,7 +278,6 @@ and (min-width : 2000px)  {
 #testimonials blockquote .quote:hover {
 	background-color: rgba(239, 240, 196, .9);	
 }
-
 
 #testimonials  #janeh {
   background: url(../images/testimonial-janeh.jpg) no-repeat center center;

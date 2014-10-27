@@ -34,6 +34,15 @@ $(function() {
   };
 
   $('#featured .item').eq(randSlide).addClass('active');
+  $("#featured").carousel();
+
+  $("#featured .left").click(function(){
+    $("#featured").carousel('prev');
+  });
+
+  $("#featured .right").click(function(){
+    $("#featured").carousel('next');
+  });
 
   //Carousel JavaScript ends
 
