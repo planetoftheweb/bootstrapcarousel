@@ -1,5 +1,6 @@
 $(function() {
   var topoffset = 50; //variable for scrolling height
+  var slideqty = $("#featured .item").length;
 
   //---- Start Carousel JavaScript
 
@@ -19,6 +20,12 @@ $(function() {
     wheight = $( window ).height();
     $('.fullheight').css('height', wheight); //set to window tallness 
   });
+
+  //create the indicators automatically
+  for (var i = 0; i < slideqty; i++) {
+    var insertText = '<li data-target="#featured" data-slide-to="'+ i +'"></li>';
+    $("#featured ol").append(insertText);
+  };
 
   //---- End Carousel JavaScript
 
