@@ -3,6 +3,10 @@ $(function() {
 
   //---- Start Carousel JavaScript
 
+    //Make a special class go full screen
+    var wheight = $( window ).height(); //get the height of the window
+    $('.fullheight').css('height', wheight); //set to window tallness 
+
   //---- End Carousel JavaScript
 
   //Activate Scrollspy
