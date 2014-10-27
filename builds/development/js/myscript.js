@@ -1,6 +1,7 @@
 $(function() {
   var topoffset = 50; //variable for scrolling height
   var slideqty = $("#featured .item").length;
+  var randSlide = Math.floor(Math.random()*slideqty);
 
   //---- Start Carousel JavaScript
 
@@ -23,9 +24,16 @@ $(function() {
 
   //create the indicators automatically
   for (var i = 0; i < slideqty; i++) {
-    var insertText = '<li data-target="#featured" data-slide-to="'+ i +'"></li>';
+    var insertText = '<li data-target="#featured" data-slide-to="'+ i +'"';
+    if (i == randSlide) {
+      insertText += 'class="active"';
+    }
+    insertText += '></li>';
     $("#featured ol").append(insertText);
   };
+
+  $('#featured .item').eq(randSlide).addClass('active');
+
 
   //---- End Carousel JavaScript
 
