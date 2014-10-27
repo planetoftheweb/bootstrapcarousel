@@ -34,6 +34,13 @@ $(function() {
 
   $('#featured .item').eq(randSlide).addClass('active');
 
+  $("#featured .left").click(function(){
+    $("#featured").carousel('prev');
+  });
+
+  $("#featured .right").click(function(){
+    $("#featured").carousel('next');
+  });
 
   //---- End Carousel JavaScript
 
