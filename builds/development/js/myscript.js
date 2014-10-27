@@ -3,16 +3,22 @@ $(function() {
 
   //---- Start Carousel JavaScript
 
-    //Make a special class go full screen
-    var wheight = $( window ).height(); //get the height of the window
-    $('.fullheight').css('height', wheight); //set to window tallness 
+  //Make a special class go full screen
+  var wheight = $( window ).height(); //get the height of the window
+  $('.fullheight').css('height', wheight); //set to window tallness 
 
-    //replace each IMG inside the carousel with a background image
-    $('#featured .item img').each(function() {
-      var imgSrc = $(this).attr('src');
-      $(this).parent().css({'background-image': 'url('+imgSrc+')'});
-      $(this).remove();
-    });
+  //replace each IMG inside the carousel with a background image
+  $('#featured .item img').each(function() {
+    var imgSrc = $(this).attr('src');
+    $(this).parent().css({'background-image': 'url('+imgSrc+')'});
+    $(this).remove();
+  });
+
+  //adjust height of .fullheight elements on window resize
+  $(window).resize(function() {
+    wheight = $( window ).height();
+    $('.fullheight').css('height', wheight); //set to window tallness 
+  });
 
   //---- End Carousel JavaScript
 
