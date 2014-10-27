@@ -7,6 +7,13 @@ $(function() {
     var wheight = $( window ).height(); //get the height of the window
     $('.fullheight').css('height', wheight); //set to window tallness 
 
+    //replace each IMG inside the carousel with a background image
+    $('#featured .item img').each(function() {
+      var imgSrc = $(this).attr('src');
+      $(this).parent().css({'background-image': 'url('+imgSrc+')'});
+      $(this).remove();
+    });
+
   //---- End Carousel JavaScript
 
   //Activate Scrollspy
